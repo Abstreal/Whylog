@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Whylog"
+run/main_scene="uid://dpi7367vcr6cw"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [rendering]
 
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

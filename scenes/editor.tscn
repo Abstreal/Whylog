@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlaq2tl1d5b6r"]
+
+[ext_resource type="Script" uid="uid://bhxuxtotr80b8" path="res://scenes/editor.gd" id="1_b1cmn"]
+
+[node name="Editor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b1cmn")
+
+[node name="NameTextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.8
+anchor_bottom = 0.05
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="WhyTextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.825
+anchor_right = 0.988
+anchor_bottom = 0.072
+text = "Save and Exit"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]
